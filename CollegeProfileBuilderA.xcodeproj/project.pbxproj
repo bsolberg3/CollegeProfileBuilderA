@@ -12,6 +12,7 @@
 		FC051B901D48FB6B0026955B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC051B8E1D48FB6B0026955B /* Main.storyboard */; };
 		FC051B921D48FB6B0026955B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC051B911D48FB6B0026955B /* Assets.xcassets */; };
 		FC051B951D48FB6B0026955B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC051B931D48FB6B0026955B /* LaunchScreen.storyboard */; };
+		FC051B9D1D490C360026955B /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC051B9C1D490C360026955B /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FC051B911D48FB6B0026955B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC051B941D48FB6B0026955B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC051B961D48FB6B0026955B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC051B9C1D490C360026955B /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				FC051B8A1D48FB6B0026955B /* AppDelegate.swift */,
 				FC051B8C1D48FB6B0026955B /* ViewController.swift */,
 				FC051B8E1D48FB6B0026955B /* Main.storyboard */,
+				FC051B9C1D490C360026955B /* DetailsViewController.swift */,
 				FC051B911D48FB6B0026955B /* Assets.xcassets */,
 				FC051B931D48FB6B0026955B /* LaunchScreen.storyboard */,
 				FC051B961D48FB6B0026955B /* Info.plist */,
@@ -137,6 +140,7 @@
 			files = (
 				FC051B8D1D48FB6B0026955B /* ViewController.swift in Sources */,
 				FC051B8B1D48FB6B0026955B /* AppDelegate.swift in Sources */,
+				FC051B9D1D490C360026955B /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
