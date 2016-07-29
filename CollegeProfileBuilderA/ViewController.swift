@@ -21,3 +21,8 @@ class ViewController: UIViewController {
         colleges.append(College(name: "University of Miami", state: "Florida", enrollment: 9979, image: UIImage(named: "UofM")!))
         colleges.append(College(name: "University of Arizona", state: "Arizona", enrollment: 28210, image: UIImage(named: "UofA")!))
         colleges.append(College(name: "University of Texas-Austin", state: "Texas", enrollment: 39523, image: UIImage(named: "UTAustin")!))
+        
+ 
+        
+    }
+}

@@ -121,6 +121,13 @@
                             <constraint firstItem="OaX-BF-WTk" firstAttribute="centerX" secondItem="RPg-wZ-BUW" secondAttribute="centerX" id="khY-vy-fsB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collegeTextField" destination="ix4-nO-WiQ" id="wyx-DR-CYI"/>
+                        <outlet property="enrollmenTextField" destination="S2J-TE-MDP" id="1HN-7E-7XN"/>
+                        <outlet property="enrollmentTextField" destination="S2J-TE-MDP" id="KMp-K0-hzJ"/>
+                        <outlet property="imageView" destination="OaX-BF-WTk" id="fZX-VD-fne"/>
+                        <outlet property="stateTextField" destination="ukf-99-1mr" id="Ghf-Wt-WJd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Km8-VW-xJQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
