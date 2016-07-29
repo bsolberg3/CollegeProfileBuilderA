@@ -33,7 +33,7 @@
                                                     <rect key="frame" x="15" y="0.0" width="570" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -51,12 +51,20 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Sna-gF-Asv">
-                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="9kt-1c-lEQ"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="8HN-fb-gka"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="9kt-1c-lEQ">
+                            <connections>
+                                <action selector="onTappedEditButton:" destination="BYZ-38-t0r" id="Ckk-ql-nr0"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="8HN-fb-gka">
+                            <connections>
+                                <action selector="onTappedPlusButton:" destination="BYZ-38-t0r" id="4Az-Mp-RZK"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="editButton" destination="9kt-1c-lEQ" id="Qf8-LQ-rAa"/>
                         <outlet property="myTableView" destination="xbl-bm-Oxc" id="wUW-sl-W1D"/>
+                        <outlet property="onTappedPlusButton" destination="8HN-fb-gka" id="C0m-Ph-Xr8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
