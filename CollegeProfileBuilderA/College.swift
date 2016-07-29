@@ -14,7 +14,7 @@ class College: NSObject {
     var enrollment = ""
     var image = UIImage(named: "Default")
     
-    conveince init(name: String, state: String, enrollment: Int, image: UIImage) {
+    convenience init(name: String, state: String, enrollment: Int, image: UIImage) {
         self.init()
         self.name = name
         self.state = state

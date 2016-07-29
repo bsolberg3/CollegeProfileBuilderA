@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     }
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        tableView.reloadData()
+        myTableView.reloadData()
     }
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
@@ -53,7 +53,7 @@ class ViewController: UIViewController {
         let addAction = UIAlertAction(title: "Add", style: .Default) { (action) in
             let collegeTextField = alert.textFields! [0] as UITextField
             self.colleges.append(College(name: collegeTextField.text!))
-            self.tableView.reloadData()
+            self.myTableView.reloadData()
         }
         alert.addAction(addAction)
         self.presentViewController(alert, animated: true, completion: nil)
@@ -69,18 +69,18 @@ class ViewController: UIViewController {
     
     @IBAction func onTappedEditButton(sender: UIBarButtonItem) {
         if sender.tag == 0 {
-            tableView.editing = true
+            myTableView.editing = true
             sender.tag = 1
         }
         else {
-            tableView.editing = false
+            myTableView.editing = false
             sender.tag = 0
         }
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let dvc = segue.destinationViewController as! DetailViewController
-        let index = tableView.indexPathForSelectedRow?.row
+        let dvc = segue.destinationViewController as! DetailsViewController
+        let index = myTableView.indexPathForSelectedRow?.row
         dvc.college = colleges[index!]
         
     }
