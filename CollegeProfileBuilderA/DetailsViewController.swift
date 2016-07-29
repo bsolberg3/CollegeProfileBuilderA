@@ -28,4 +28,10 @@ class DetailsViewController: UIViewController {
         imageView.image = college.image
         
     }
-}
+    @IBAction func onTappedSaveButton(sender: UIButton) {
+        college.name = collegeTextField.text!
+        
+        college.state = stateTextField.text!
+        
+        college.enrollment = Int(enrollmentTextField.text!)!
+    }
