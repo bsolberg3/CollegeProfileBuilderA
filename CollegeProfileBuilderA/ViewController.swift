@@ -8,17 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var myTableView: UITableView!
     @IBOutlet weak var editButton: UIBarButtonItem!
+    @IBOutlet weak var plusButton: UIBarButtonItem!
     var colleges = [College]()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        myTableView.delegate = self
+        myTableView.dataSource = self
+        
         editButton.tag = 0
-        colleges.append(College(name: "University of Miami", state: "Florida", enrollment: 9979, image: UIImage(named: "UofM")!))
+        colleges.append(College(name: "University of Miami", state: "Florida", enrollment: 9979, image: UIImage(named: "UofM.jpeg")!))
         colleges.append(College(name: "University of Arizona", state: "Arizona", enrollment: 28210, image: UIImage(named: "UofA")!))
         colleges.append(College(name: "University of Texas-Austin", state: "Texas", enrollment: 39523, image: UIImage(named: "UTAustin")!))
         
@@ -58,9 +63,11 @@ class ViewController: UIViewController {
         alert.addAction(addAction)
         self.presentViewController(alert, animated: true, completion: nil)
     }
+    
     func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         return true
     }
+    
     func tableView(tableView: UITableView, moveRowAtIndexPath sourceIndexPath: NSIndexPath, toIndexPath destinationIndexPath: NSIndexPath) {
         let college = colleges[sourceIndexPath.row]
         colleges.removeAtIndex(sourceIndexPath.row)

@@ -11,7 +11,7 @@ import UIKit
 class College: NSObject {
     var name = ""
     var state = ""
-    var enrollment = ""
+    var enrollment = 0
     var image = UIImage(named: "Default")
     
     convenience init(name: String, state: String, enrollment: Int, image: UIImage) {

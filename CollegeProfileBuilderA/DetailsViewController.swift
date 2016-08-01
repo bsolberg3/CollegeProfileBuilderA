@@ -36,11 +36,8 @@ class DetailsViewController: UIViewController {
         college.enrollment = Int(enrollmentTextField.text!)!
     }
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let dvc = segue.destinationViewController as! MapViewController
     
-    let dvc = segue.destinationViewController as! MapViewController
-    
-    
-    
-    dvc.data = college.name
+        dvc.data = college.name
     }
 }
