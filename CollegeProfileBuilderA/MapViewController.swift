@@ -68,17 +68,14 @@ class MapViewController: UIViewController, UITextFieldDelegate {
             self.mapViewController.setRegion(region, animated: true)
             let actionController = UIAlertController(title: "Select an option", message: nil, preferredStyle: .ActionSheet)
             
-            let sayHelloAction = UIAlertAction(title: "", style: .Default) { (action) in
-                print("Hello Bobby")
-            }
-            
             let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: nil)
             
             actionController.addAction(cancelAction)
-            actionController.addAction(sayHelloAction)
+    
+
             
             self.presentViewController(actionController, animated: true, completion: nil)
         }
-        
-}
 
+
+}
