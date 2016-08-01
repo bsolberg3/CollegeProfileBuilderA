@@ -23,9 +23,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         myTableView.dataSource = self
         
         editButton.tag = 0
-        colleges.append(College(name: "University of Miami", state: "Florida", enrollment: 9979, image: UIImage(named: "UofM.jpeg")!))
-        colleges.append(College(name: "University of Arizona", state: "Arizona", enrollment: 28210, image: UIImage(named: "UofA")!))
-        colleges.append(College(name: "University of Texas-Austin", state: "Texas", enrollment: 39523, image: UIImage(named: "UTAustin")!))
+        colleges.append(College(name: "University of Miami", state: "Florida", enrollment: 9979, website: "http://welcome.miami.edu/", image: UIImage(named: "UofM.jpeg")!))
+        colleges.append(College(name: "University of Arizona", state: "Arizona", enrollment: 28210, website: "http://www.arizona.edu/", image: UIImage(named: "UofA")!))
+        colleges.append(College(name: "University of Texas-Austin", state: "Texas", enrollment: 39523, website: "http://www.utexas.edu/", image: UIImage(named: "UTAustin")!))
         
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
